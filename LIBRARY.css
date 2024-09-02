@@ -1,0 +1,220 @@
+/* Body Styling */
+body {
+    background-image: url('https://www.ultraimagehub.com/wallpapers/tr:flp-false,gx-0.5,gy-1,q-75,rh-3264,rw-5824,th-1080,tw-1920/1236882048292098148.jpeg');
+    background-color: #bcf37d;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding-top: 60px; /* Adjust for fixed navbar height */
+}
+
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    height: 7%;
+    background-color: rgba(51, 39, 15, 0.6); /* Semi-transparent background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-family: 'Lilita One', sans-serif; /* Corrected font-family */
+    color: #f3efef;
+    flex: 1;
+}
+
+.nav-items {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-bar {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    max-width: 100%;
+    margin-left: -45%;
+    margin-right: 50%;
+    font-weight: bolder;
+}
+
+#search-bar::placeholder {
+    color: rgb(12, 12, 11);
+    font-family: 'Lilita One', sans-serif;
+}
+
+#search-button {
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #f7f9f8;
+    color: rgb(7, 5, 5);
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: -25rem;
+    font-family: 'Lilita One', sans-serif;
+}
+
+#search-button:hover {
+    background-color: #a3f267;
+    color: black;
+}
+
+/* Keyframe animation for continuous sliding effect */
+@keyframes continuousSlide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Initial Book Grid Styling */
+.initial-book-grid {
+    display: flex;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 2);
+    animation: continuousSlide 10s linear infinite;
+    margin-top: 6rem;
+}
+
+.initial-book-grid:hover {
+    animation-play-state: paused;
+}
+
+/* Adjust the size of the container to ensure correct sliding */
+.initial-book-grid .book-card {
+    flex: 0 0 auto;
+}
+
+/* Search Results Styling */
+.search-results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    box-shadow: rgba(0, 0, 0, 2);
+}
+
+/* Book Card Styling */
+.book-card {
+    height: 25rem;
+    width: 18rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, z-index 0.3s;
+    z-index: 1;
+    padding: 50px;
+}
+
+.book-card:nth-child(even) {
+    margin-top: 2rem; /* Adjust for brick effect */
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.book-info {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.book-info p {
+    margin: 0.5rem 0;
+}
+
+.book-info a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.book-card:hover {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
+.book-card:hover .book-info {
+    opacity: 1;
+}
+
+.footer-p {
+    font-size: 30px;
+    font-family: 'Lilita One', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+.borrow-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.borrow-button:hover {
+    background-color: #0056b3;
+}
+
+.borrow-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+
+
+
+/* Profile Link Styling */
+.profile-link {
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #f7f8fa;
+    color: rgb(12, 8, 8);
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    font-family: 'Lilita One', sans-serif;
+}
+
+.profile-link:hover {
+    background-color: #83b9f1;
+}

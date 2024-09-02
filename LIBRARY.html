@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY</title>
+    <link rel="stylesheet" href="LIBRARY.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">Book Keeper</div>
+        <div class="nav-items">
+            <input type="text" id="search-bar" placeholder="Search books...">
+            <button id="search-button">Search</button>
+            <a href="LIB-PROFILE.html" class="profile-link">Profile</a>
+        </div>
+    </nav>
+    
+    <!-- Container for initially displayed books -->
+    <div class="initial-book-grid book-grid">
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/800px-The_Great_Gatsby_Cover_1925_Retouched.jpg" alt="The Great Gatsby">
+            <div class="book-info">
+                <p>The Great Gatsby</p>
+                <p>F. Scott Fitzgerald</p>
+                <a href="https://planetebook.com/free-ebooks/the-great-gatsby.pdf">Read Book</a>
+            </div>
+        </div>
+        
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/71PkLJqim4L._SY466_.jpg" alt="Outlander">
+            <div class="book-info">
+                <p>Outlander</p>
+                <p>Diana Gabaldon</p>
+                <a href="https://allnovel.net/outlander-outlander-1/page-1.html">Read Book</a>
+            </div>
+        </div>
+    
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/81JD6Rh0BYL._SY679_.jpg" alt="Catch-22">
+            <div class="book-info">
+                <p>Catch-22</p>
+                <p>Joseph Heller</p>
+                <a href="https://bookhall.co.ua/en/books/catch-22-joseph-heller?page=1">Read Book</a>
+            </div>
+        </div>
+    
+        <div class="book-card">
+            <img src="https://m.media-amazon.com/images/I/A1Yb6i5qAUL._SY466_.jpg" alt="Ramayana">
+            <div class="book-info">
+                <p>Ramayana</p>
+                <p>Valmiki</p>
+                <a href="https://embassyofindiabangkok.gov.in/public/assets/pdf/Valmiki%20Ramayana%20aur%20Ramakien%20Ek%20Tulnamatmak%20Adhyayan.pdf">Read Book</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Container for search results -->
+    <div id="search-results" class="search-results book-grid" style="display: none;"></div>
+
+    <footer>
+        <p class="footer-p">&copy; TechZeek</p>
+    </footer>
+
+    <script src="LIBRARY.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management - Login</title>
+    <link rel="stylesheet" href="LIB-SIGNUP.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 id="login-logo">Login</h2>
+        <form id="login-form">
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+            <p class="signup-link">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+        </form>
+
+        <form id="signup-form" style="display: none;">
+            <h2>Signup</h2>
+            <input type="text" id="signup-username" placeholder="Username" required>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <button type="submit">Signup</button>
+            <p class="login-link">Already have an account? <a href="#" id="show-login">Login</a></p>
+        </form>
+    </div>
+
+    <script src="LIB-SIGNUP.js"></script>
+</body>
+</html>

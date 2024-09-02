@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="LIB-PROFILE.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Profile Page</h1>
+        <a href="LIBRARY.html">Back to Home</a>
+    </header>
+
+    <div id="profile">
+        <img id="profile-pic" src="default-profile-pic.jpg" alt="Profile Picture">
+        <input type="file" id="profile-pic-upload" accept="image/*">
+        <h2 id="username"></h2> <!-- Dynamic username -->
+        <p id="email"></p> <!-- Dynamic email -->
+        <h3>Borrowed Books</h3>
+        <div id="borrowed-books"></div>
+    </div>
+
+    <script src="LIB-PROFILE.js"></script>
+</body>
+</html>
